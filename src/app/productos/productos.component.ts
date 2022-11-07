@@ -20,7 +20,6 @@ export class ProductosComponent implements OnInit {
   }
 
   selectProducto(pro:Producto):Producto{
-    
     return pro;
   }
 
