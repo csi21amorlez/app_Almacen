@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MOCK_PRODUCTOS } from 'src/mock-producto';
 import { Producto } from '../../Producto';
 import { ServicioProductosService } from '../servicio-productos.service';
 
@@ -10,13 +11,16 @@ import { ServicioProductosService } from '../servicio-productos.service';
 })
 export class ProductosComponent implements OnInit {
 
+  productos = MOCK_PRODUCTOS;
+  selectedProducto:Producto;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  selectProducto(pro:any):Producto{
-    pro = ServicioProductosService
+  selectProducto(pro:Producto):Producto{
+    
     return pro;
   }
 

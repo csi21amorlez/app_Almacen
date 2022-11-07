@@ -11,8 +11,5 @@ export class ServicioProductosService {
 
   constructor() { }
 
-  getProdcutos(): Observable<Producto>{
-    return of(MOCK_PRODUCTOS);
-  }
 
 }
