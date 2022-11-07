@@ -1,0 +1,7 @@
+<li *ngFor="let producto IN MOCK_PRODUCTOS">
+  <button [class.selected]="producto === producto" type="button" (click)="selectedProducto(producto)">
+    <span class="badge">{{producto.id}}</span>
+    <span class="name">{{barco.nombre}}</span>
+</li>
+
+
