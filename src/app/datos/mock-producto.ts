@@ -1,4 +1,4 @@
-import { Producto } from './Producto';
+import { Producto } from "../interfaces/producto"
 
 export const MOCK_PRODUCTOS :Producto[] = [
   {id: 1, nombre:'Patata', precio:0.2,  stock:20, familia:'Alimentación'},

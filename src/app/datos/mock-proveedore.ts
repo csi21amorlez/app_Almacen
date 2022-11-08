@@ -1,4 +1,4 @@
-import { Proveedor } from "./Proveedor";
+import { Proveedor } from "../interfaces/proveedor"
 
 
 export const MOCK_PROVEEDORES:Proveedor[] = [

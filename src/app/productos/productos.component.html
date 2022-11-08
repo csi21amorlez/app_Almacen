@@ -1,15 +1,16 @@
+<div class="container border">
+  <h3>Listado de productos</h3>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let producto of productos" (click)="selectProducto(producto)">
+      <span>{{producto.id}}- </span>
+      <span> {{producto.nombre}}</span>
+    </li>
+  </ul>
+<app-productos-detalles ></app-productos-detalles>
+</div>
 
-<ul>
-  <li *ngFor="let producto IN MOCK_PRODUCTOS">
-    <button class="btn danger" [class.selected]="producto === producto" type="button" (click)="selectProducto(producto)">
-      <span class="badge">{{producto.id}}</span>    
-      <span class="name">{{producto.nombre}}</span>
-      </button>    
-  </li>
-</ul>
 
 
-  
 
 
 

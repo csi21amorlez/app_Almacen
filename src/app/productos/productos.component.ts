@@ -1,26 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { MOCK_PRODUCTOS } from 'src/mock-producto';
-import { Producto } from '../../Producto';
-import { ServicioProductosService } from '../servicio-productos.service';
-
+import { Producto } from '../interfaces/producto';
+import { MOCK_PRODUCTOS } from '../datos/mock-producto';
+import { ProductosService } from '../servicios/productos.service';
 
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.css']
+  styleUrls: ['./productos.component.css'],
 })
 export class ProductosComponent implements OnInit {
+  selectedProduct: Producto;
+  productos: Producto[] = [];
 
-  productos = MOCK_PRODUCTOS;
-  selectedProducto:Producto;
+  constructor(private proServ: ProductosService) {}
 
-  constructor() { }
-
+  //Cargamos getProductos
   ngOnInit(): void {
+    this.getProductos();
   }
-
-  selectProducto(pro:Producto):Producto{
-    return pro;
+  selectProducto(producto: Producto) {
+    this.selectedProduct = producto;
   }
-
+  //Indicamos que nos devuelva los onjetos obtenidos del metodo getProducto de servicios
+  getProductos(): void {
+    this.productos = this.proServ.getProducto();
+  }
 }

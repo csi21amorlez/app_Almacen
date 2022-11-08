@@ -8,11 +8,12 @@ import { ProductosComponent } from './productos/productos.component';
 import { ProductosDetallesComponent } from './productos-detalles/productos-detalles.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ProveedoresDetallesComponent } from './proveedores-detalles/proveedores-detalles.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,    
-    ProductosComponent, ProductosDetallesComponent, ProveedoresComponent, ProveedoresDetallesComponent
+    ProductosComponent, ProductosDetallesComponent, ProveedoresComponent, ProveedoresDetallesComponent, MenuComponent
   ],
   imports: [
     BrowserModule,
