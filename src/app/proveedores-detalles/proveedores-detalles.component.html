@@ -1,2 +1,13 @@
-<p>proveedores-detalles works!</p>
+<!--Usamo el *ngIf para comprobar que lo que nos esta llegando realmente es un proveedor-->
+<div *ngIf="proveedor" class="container border">
+  <h3 >Detalle del proveedor</h3>
+
+  <p>{{proveedor.id}}</p>
+  <p>{{proveedor.nombre}}</p>
+  <p>{{proveedor.contacto[0]}}</p>
+  <p>{{proveedor.contacto[1]}}</p>
+  <p>{{proveedor.direccion}}</p>
+</div>
+
+
 

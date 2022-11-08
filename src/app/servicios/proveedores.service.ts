@@ -6,7 +6,7 @@ import { MOCK_PROVEEDORES } from '../datos/mock-proveedore';
   providedIn: 'root',
 })
 export class ProveedoresService {
-  
+
   private proveedores: Proveedor[] = [];
 
   constructor() {
@@ -19,7 +19,7 @@ export class ProveedoresService {
   }
   //Metodo que busca proveedores por id
   getDetalle(id: number): Proveedor {
-    const selectedProveedor = this.proveedores.find[id];
+    const selectedProveedor = this.proveedores.find(p => p.id === id);
     return selectedProveedor;
   }
 }

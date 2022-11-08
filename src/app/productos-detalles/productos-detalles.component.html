@@ -1,9 +1,12 @@
 <div *ngIf="producto" class="container border">
   <h3>Detalle del producto {{producto.id}}</h3>
-  <p>{{producto.nombre}</p>
+  <!-- <!- En caso de quereer poner imagenes ->  <img width="150px" src="../assets/image/{{producto.imagen}}"/> -->
+  <p>{{producto.nombre}}</p>
   <p>{{producto.precio}}</p>
   <p>{{producto.stock}}</p>
   <p>{{producto.familia}}</p>
+
+
 </div>
 
 

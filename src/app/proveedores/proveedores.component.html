@@ -1,1 +1,18 @@
-<p>proveedores works!</p>
+<h2>Listado de proveedores</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Contacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pro of proveedores" routerLink="/detalle-proveedor/{{pro.id}}">
+    <th>{{pro.id}}</th>
+    <th>{{pro.nombre}}</th>
+    <th>{{pro.contacto}}</th>
+    </tr>
+  </tbody>
+</table>
+
